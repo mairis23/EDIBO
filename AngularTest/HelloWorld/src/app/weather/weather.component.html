@@ -1,0 +1,41 @@
+<!-- <h1>Valuta: {{baseRate}}</h1>
+<h2>Datumi no {{startDate}} lidz {{endDate}}</h2>
+
+<table class="table table-border">
+  <thead>
+    <th>Datums</th>
+    <th>GBP</th>
+    <th>USD</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rate of rates">
+      <td>{{rate.date}}</td>
+      <td>{{rate.rate.USD}}</td>
+      <td>{{rate.rate.GBP}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+  {{rates | json}}
+</div> -->
+
+<h1>Weather</h1>
+
+<table class="table table-border">
+  <thead>
+    <th>Datums</th>
+    <th>TemperatureC</th>
+    <th>TemperatureF</th>
+    <th>Summary</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let temperature of temperatures">
+      <td>{{temperature[1].date}}</td>
+      <td>{{temperature[1].temperatureC}}</td>
+      <td>{{temperature[1].temperatureF}}</td>
+      <td>{{temperature[1].summary}}</td>
+    </tr>
+  </tbody>
+</table>
+
